@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>BAKERY</title>
+</head>
+<body>
+    <section class="content">
+        <div class="counter" id="counter">
+            <div class="row">
+                <div class="item" onclick="reload(this)">
+                    <div class="container-photo">
+                        <img src="img/1.jpg" alt="">
+                    </div>
+                    <p class="description">Item 1 </p>
+                    <span class="price">$ 1.300</span>
+                </div>
+                <div class="item" onclick="reload(this)">
+                    <div class="container">
+                        <img src="img/2.jpg" alt="">
+                    </div>
+                    <p class="description" id>Item 2 </p>
+                    <span class="price">$ 1.800</span>
+                </div>
+                <div class="item" onclick="reload(this)">
+                    <div class="container-photo">
+                        <img src="img/3.jpg" alt="">
+                    </div>
+                    <p class="description">Item 3 </p>
+                    <span class="price">$ 3.600</span>
+                </div>
+                <div class="item" onclick="reload(this)">
+                    <div class="container-photo">
+                        <img src="img/4.jpg" alt="">
+                    </div>
+                    <p class="description">Item 4</p>
+                    <span class="price">$ 1.800</span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="item" onclick="reload(this)">
+                    <div class="container-photo">
+                        <img src="img/5.jpg" alt="">
+                    </div>
+                    <p class="description">Item 5</p>
+                    <span class="price">$ 1300</span>
+                </div>
+                <div class="item" onclick="reload(this)">
+                    <div class="container-photo">
+                        <img src="img/6.jpg" alt="">
+                    </div>
+                    <p class="description">Item 6</p>
+                    <span class="price">$ 2.000</span>
+                </div>
+                <div class="item" onclick="reload(this)">
+                    <div class="container-photo">
+                        <img src="img/7.jpg" alt="">
+                    </div>
+                    <p class="description">Item 7</p>
+                    <span class="price">$ 2.500</span>
+                </div>
+                <div class="item" onclick="reload(this)">
+                    <div class="container-photo">
+                        <img src="img/8.jpg" alt="">
+                    </div>
+                    <p class="description">Item 8</p>
+                    <span class="price">$ 1.800</span>
+                </div>
+            </div> 
+        </div>
+        <!-- Item Container selected -->
+        <div class="selection" id="selection">
+            <div class="closed" onclick="closed()">
+                &#x2715
+            </div>
+            <div class="info">
+                <img src="img/1.png" alt="" id="img">
+                <h2 id="type">Item 1 </h2>
+                <p id="description">Type description 1</p>
+
+                <span class="price" id="price">$ 2000</span>
+
+                <div class="row">
+                    <div class="quantity">
+                        <label for="">QUANTITY</label>
+                        <select name="" id="">
+                            <option value="">1</option>
+                            <option value="">2</option>
+                            <option value="">3</option>
+                            <option value="">4</option>
+                            <option value="">5</option>
+                        </select>
+                    </div>
+                    <button>Add to order</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="code.js"></script>
+</body>
+</html>
